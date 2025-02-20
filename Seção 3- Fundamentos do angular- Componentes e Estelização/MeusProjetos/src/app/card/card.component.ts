@@ -6,16 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
+plano={
+infos: {
+  tipo : 'Simples',
+  preco : 100,
+}
+};
 
-  tipo= 'teste';
-  preco=1000;
-
-  getFullprice(){
-    setTimeout(() =>{
-      console.log('Set Timeout');
-      this.tipo='Simples';
-    },4000);
-    return 'R$' + this.preco + ',00/Mês';
-  }
 }
 
